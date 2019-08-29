@@ -53,4 +53,9 @@ authRouter.get('/oauth', (req,res,next) => {
     .catch(next);
 });
 
+authRouter.post('/key', (req,res,next) => {
+  let key = req.user.generateToken();
+  res.send(key);
+});
+
 module.exports = authRouter;

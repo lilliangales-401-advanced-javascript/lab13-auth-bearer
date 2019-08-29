@@ -1,17 +1,17 @@
 # LAB - 
 
-## Project Name
+## Lab 11 - Bearer Authorization
 
-### Author: Student/Group Name
+### Author: Lillian Gales
 
 ### Links and Resources
 * [submission PR](https://github.com/lilliangales-401-advanced-javascript/lab13-auth-bearer/pulls)
-* [travis] (https://travis-ci.com/lilliangales-401-advanced-javascript/lab13-auth-bearer/builds/125014009)
+* [travis] (https://travis-ci.com/lilliangales-401-advanced-javascript/lab13-auth-bearer/builds/125134573)
 
 
 #### Documentation
-* [api docs](http://xyz.com) (API servers)
-* [jsdoc](http://xyz.com) (Server assignments)
+* [api docs](http://localhost:3009/api-docs) (API servers)
+* [jsdoc](https://lab13-auth-bearer.herokuapp.com/docs/)
 
 
 
