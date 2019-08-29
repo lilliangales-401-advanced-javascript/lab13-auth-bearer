@@ -22,6 +22,8 @@ beforeAll(async (done) => {
 
 afterAll(supergoose.stopDB);
 
+
+
 describe('Auth Middleware', () => {
   
   // admin:password: YWRtaW46cGFzc3dvcmQ=
@@ -68,7 +70,26 @@ describe('Auth Middleware', () => {
           expect(next).toHaveBeenCalledWith();
         });
 
-    }); // it()
+    });
+
+    it('logs in an admin user with the right credentials', () => {
+
+      let req = {
+        headers: {
+          authorization: 'Basic YWRtaW46cGFzc3dvcmQ=',
+        },
+      };
+      let res = {};
+      let next = jest.fn();
+      let middleware = auth;
+
+      return middleware(req,res,next)
+        .then( () => {
+          cachedToken = req.token;
+          expect(next).toHaveBeenCalledWith();
+        });
+
+    });
     
   });
 

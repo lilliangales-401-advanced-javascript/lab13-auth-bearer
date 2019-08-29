@@ -29,18 +29,21 @@ Usage Notes or examples
 #### `.env` requirements
 * `PORT` - Port Number
 * `MONGODB_URI` - URL to the running mongo instance/db
+MONGODB_URI=mongodb://localhost:27017/lab13
+* `SECRET` - 'secret'
+
 
 #### Running the app
 * `npm start`
-* Endpoint: `/foo/bar/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
-  * Returns a JSON object with xyz in it.
+##### Optional: 
+*' `JWT_EXPIRES`='time' ex. '1m'
+* `JWT_SINGLE_USE` - 'true'
+
+
   
 #### Tests
 * How do you run tests?
-* What assertions were made?
-* What assertions need to be / should be made?
+* `npm run test`
 
 #### UML
 Link to an image of the UML for your application and response to events

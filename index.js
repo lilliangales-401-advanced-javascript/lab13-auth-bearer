@@ -1,6 +1,7 @@
 'use strict';
 
 require('dotenv').config();
+require('./docs/config/swagger');
 
 // Start up DB Server
 const mongoose = require('mongoose');

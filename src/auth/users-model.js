@@ -23,6 +23,11 @@ users.pre('save', function(next) {
     .catch(console.error);
 });
 
+/**
+ *
+ * @param email
+ * @returns {Promise<never>|Promise<unknown>}
+ */
 users.statics.createFromOauth = function(email) {
 
   if(! email) { return Promise.reject('Validation Error'); }
@@ -43,6 +48,11 @@ users.statics.createFromOauth = function(email) {
 };
 
 // decrypt/verify and then find the user based on the id
+/**
+ *
+ * @param token
+ * @returns {Query|void}
+ */
 users.statics.authenticateToken = function(token){
 
   if (process.env.JWT_SINGLE_USE) {
@@ -62,6 +72,11 @@ users.statics.authenticateToken = function(token){
   }
 };
 
+/**
+ *
+ * @param auth
+ * @returns {Promise<unknown>}
+ */
 users.statics.authenticateBasic = function(auth) {
   let query = {username:auth.username};
   return this.findOne(query)
@@ -69,11 +84,20 @@ users.statics.authenticateBasic = function(auth) {
     .catch(error => {throw error;});
 };
 
+/**
+ *
+ * @param password
+ * @returns {Promise<unknown>}
+ */
 users.methods.comparePassword = function(password) {
   return bcrypt.compare( password, this.password )
     .then( valid => valid ? this : null);
 };
 
+/**
+ *
+ * @returns {undefined|*}
+ */
 users.methods.generateToken = function() {
   
   let token = {

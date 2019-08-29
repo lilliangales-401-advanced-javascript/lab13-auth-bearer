@@ -2,8 +2,9 @@
 
 const User = require('./users-model.js');
 
+
 module.exports = (req, res, next) => {
-  
+
   try {
     let [authType, authString] = req.headers.authorization.split(/\s+/);
     
@@ -19,8 +20,13 @@ module.exports = (req, res, next) => {
   catch(e) {
     next(e);
   }
-  
-  
+
+  /**
+   *
+   * @param {string }str - a string
+   * @returns {Promise<void>}
+   * @private
+   */
   function _authBasic(str) {
     // str: am9objpqb2hubnk=
     let base64Buffer = Buffer.from(str, 'base64'); // <Buffer 01 02 ...>
@@ -33,12 +39,23 @@ module.exports = (req, res, next) => {
       .catch(next);
   }
 
+  /**
+   *
+   * @param authString
+   * @returns {Promise<T>}
+   * @private
+   */
   function _authBearer(authString){
     return User.authenticateToken(authString)
       .then(user => _authenticate(user))
       .catch(next);
   }
 
+  /**
+   *
+   * @param user
+   * @private
+   */
   function _authenticate(user) {
     if(user) {
       req.user = user;

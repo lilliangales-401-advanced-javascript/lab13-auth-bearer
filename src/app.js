@@ -22,7 +22,7 @@ app.use(express.urlencoded({extended:true}));
 
 // Routes
 app.use(authRouter);
-
+app.use('/docs', express.static('./docs'));
 // Catchalls
 app.use(notFound);
 app.use(errorHandler);
