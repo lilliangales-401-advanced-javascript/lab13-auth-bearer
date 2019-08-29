@@ -56,6 +56,7 @@ users.statics.createFromOauth = function(email) {
 users.statics.authenticateToken = function(token){
 
   if (process.env.JWT_SINGLE_USE) {
+    // eslint-disable-next-line no-prototype-builtins
     if (used_tokens.hasOwnProperty(token)) {
       throw new Error();
     } else {

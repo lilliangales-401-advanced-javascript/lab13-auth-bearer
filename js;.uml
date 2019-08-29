@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JavaScript-modules-diagram</ID>
+  <OriginalElement>/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/middleware;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/index.js;</OriginalElement>
+  <nodes>
+    <node x="773.0" y="322.0">/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/middleware/404.js</node>
+    <node x="702.0" y="114.0">/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/middleware/500.js</node>
+    <node x="563.0" y="181.0">/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#authRouter#272;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#cors#80;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#errorHandler#167;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#express#44;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#morgan#110;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#notFound#221;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#start#665;</node>
+    <node x="0.0" y="451.0">/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/node_modules/bcrypt/bcrypt.js</node>
+    <node x="381.0" y="661.0">/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/oauth/google.js#Users#63;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/oauth/google.js#superagent#21;</node>
+    <node x="586.0" y="483.0">/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/node_modules/morgan/index.js</node>
+    <node x="155.0" y="278.0">/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/node_modules/mongoose/index.js</node>
+    <node x="312.0" y="121.0">/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/index.js#config#15;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/index.js#mongoose#106;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/index.js#start#284;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/index.js#swagger.js#43;</node>
+    <node x="529.0" y="47.0">/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/node_modules/cors/lib/index.js</node>
+    <node x="82.0" y="670.0">/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/node_modules/jsonwebtoken/index.js</node>
+    <node x="277.0" y="570.0">/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/middleware.js#User#21;</node>
+    <node x="387.0" y="413.0">/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/router.js#User#95;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/router.js#auth#137;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/router.js#express#21;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/router.js#oauth#178;</node>
+    <node x="139.0" y="52.0">/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/docs/config/swagger.js</node>
+    <node x="183.0" y="412.0">/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/users-model.js#bcrypt#59;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/users-model.js#jwt#93;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/users-model.js#mongoose#21;</node>
+    <node x="333.0" y="0.0">/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/node_modules/dotenv/lib/main.js#config#2602;</node>
+    <node x="673.0" y="416.0">express</node>
+    <node x="557.0" y="712.0">superagent</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/router.js#User#95;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/router.js#auth#137;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/router.js#express#21;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/router.js#oauth#178;" target="express">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#authRouter#272;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#cors#80;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#errorHandler#167;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#express#44;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#morgan#110;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#notFound#221;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#start#665;" target="/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/router.js#User#95;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/router.js#auth#137;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/router.js#express#21;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/router.js#oauth#178;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/router.js#User#95;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/router.js#auth#137;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/router.js#express#21;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/router.js#oauth#178;" target="/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/oauth/google.js#Users#63;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/oauth/google.js#superagent#21;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#authRouter#272;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#cors#80;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#errorHandler#167;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#express#44;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#morgan#110;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#notFound#221;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#start#665;" target="/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/middleware/404.js">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/oauth/google.js#Users#63;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/oauth/google.js#superagent#21;" target="/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/users-model.js#bcrypt#59;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/users-model.js#jwt#93;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/users-model.js#mongoose#21;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/users-model.js#bcrypt#59;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/users-model.js#jwt#93;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/users-model.js#mongoose#21;" target="/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/node_modules/mongoose/index.js">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/users-model.js#bcrypt#59;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/users-model.js#jwt#93;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/users-model.js#mongoose#21;" target="/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/node_modules/bcrypt/bcrypt.js">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#authRouter#272;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#cors#80;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#errorHandler#167;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#express#44;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#morgan#110;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#notFound#221;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#start#665;" target="/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/middleware/500.js">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/index.js#config#15;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/index.js#mongoose#106;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/index.js#start#284;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/index.js#swagger.js#43;" target="/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/docs/config/swagger.js">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/oauth/google.js#Users#63;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/oauth/google.js#superagent#21;" target="superagent">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/router.js#User#95;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/router.js#auth#137;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/router.js#express#21;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/router.js#oauth#178;" target="/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/users-model.js#bcrypt#59;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/users-model.js#jwt#93;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/users-model.js#mongoose#21;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/index.js#config#15;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/index.js#mongoose#106;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/index.js#start#284;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/index.js#swagger.js#43;" target="/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#authRouter#272;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#cors#80;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#errorHandler#167;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#express#44;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#morgan#110;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#notFound#221;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#start#665;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#authRouter#272;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#cors#80;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#errorHandler#167;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#express#44;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#morgan#110;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#notFound#221;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#start#665;" target="/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/node_modules/cors/lib/index.js">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#authRouter#272;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#cors#80;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#errorHandler#167;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#express#44;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#morgan#110;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#notFound#221;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#start#665;" target="express">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#authRouter#272;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#cors#80;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#errorHandler#167;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#express#44;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#morgan#110;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#notFound#221;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/app.js#start#665;" target="/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/node_modules/morgan/index.js">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/router.js#User#95;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/router.js#auth#137;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/router.js#express#21;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/router.js#oauth#178;" target="/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/middleware.js#User#21;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/index.js#config#15;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/index.js#mongoose#106;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/index.js#start#284;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/index.js#swagger.js#43;" target="/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/node_modules/dotenv/lib/main.js#config#2602;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/middleware.js#User#21;" target="/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/users-model.js#bcrypt#59;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/users-model.js#jwt#93;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/users-model.js#mongoose#21;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/index.js#config#15;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/index.js#mongoose#106;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/index.js#start#284;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/index.js#swagger.js#43;" target="/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/node_modules/mongoose/index.js">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/users-model.js#bcrypt#59;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/users-model.js#jwt#93;/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/src/auth/users-model.js#mongoose#21;" target="/Users/lillielise/codefellows/401/labs/lab13-auth-bearer/lab13-auth-bearer/node_modules/jsonwebtoken/index.js">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Orthogonal" zoom="0.5329815303430079" x="461.0" y="369.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>All</Category>
+  </Categories>
+  <VISIBILITY>Details</VISIBILITY>
+</Diagram>
+

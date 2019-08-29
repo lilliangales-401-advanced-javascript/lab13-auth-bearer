@@ -14,6 +14,8 @@
 * [api docs](http://xyz.com) (API servers)
 * [jsdoc](http://xyz.com) (Server assignments)
 * [styleguide](http://xyz.com) (React assignments)
+* [travis] (https://travis-ci.com/lilliangales-401-advanced-javascript/lab13-auth-bearer/builds/125013361?utm_medium=notification&utm_source=email)
+
 
 ### Modules
 #### `modulename.js`
@@ -46,4 +48,4 @@ MONGODB_URI=mongodb://localhost:27017/lab13
 * `npm run test`
 
 #### UML
-Link to an image of the UML for your application and response to events
+![UML](js;.uml)

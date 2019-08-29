@@ -45,7 +45,7 @@ describe('Auth Router', () => {
             var token = jwt.verify(results.text, process.env.SECRET);
             expect(token.id).toEqual(id);
           });
-      })
+      });
 
       it('can signin with bearer', () => {
         return mockRequest.post('/signin')
