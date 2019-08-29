@@ -56,7 +56,7 @@ users.statics.createFromOauth = function(email) {
  */
 users.statics.authenticateToken = function(token){
 
-  if (process.env.JWT_SINGLE_USE) {
+  if (process.env.JWT_SINGLE_USE && token.type === 'token') {
     // eslint-disable-next-line no-prototype-builtins
     if (used_tokens.hasOwnProperty(token)) {
       throw new Error();
@@ -100,12 +100,24 @@ users.methods.comparePassword = function(password) {
  *
  * @returns {undefined|*}
  */
-users.methods.generateToken = function() {
-  
+users.methods.generateToken = function(type) {
+
+
+  if(type) {
+    let token = {
+      id: this._id,
+      role: this.role,
+      type: 'key',
+    };
+    return jwt.sign(token, process.env.SECRET);
+  }
+
   let token = {
     id: this._id,
     role: this.role,
+    type: 'token',
   };
+
 
   if (process.env.JWT_EXPIRES) {
     let signOptions = {
@@ -116,5 +128,7 @@ users.methods.generateToken = function() {
   }
   return jwt.sign(token, process.env.SECRET);
 };
+
+
 
 module.exports = mongoose.model('users', users);

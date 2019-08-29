@@ -90,6 +90,27 @@ describe('Auth Middleware', () => {
         });
 
     });
+    describe('user authentication', () => {
+
+      let cachedToken;
+
+      it('fails a login for a user (admin) with the incorrect basic credentials', () => {
+
+        let req = {
+          headers: {
+            authorization: 'Basic YWRtaW46Zm9v',
+          },
+        };
+        let res = {};
+        let next = jest.fn();
+        let middleware = auth;
+
+        return middleware(req, res, next)
+          .then(() => {
+            expect(next).toHaveBeenCalledWith(errorObject);
+          });
+
+      });
     
   });
 

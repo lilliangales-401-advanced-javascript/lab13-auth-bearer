@@ -46,4 +46,4 @@ MONGODB_URI=mongodb://localhost:27017/lab13
 * `npm run test`
 
 #### UML
-![UML](js;.uml)
+![UML](js;.png)
