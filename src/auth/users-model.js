@@ -48,6 +48,7 @@ users.statics.createFromOauth = function(email) {
 };
 
 // decrypt/verify and then find the user based on the id
+//
 /**
  *
  * @param token
