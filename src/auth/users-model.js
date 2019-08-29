@@ -4,6 +4,9 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
+// Global variable
+let used_tokens = {};
+
 const users = new mongoose.Schema({
   username: {type:String, required:true, unique:true},
   password: {type:String, required:true},
@@ -39,6 +42,26 @@ users.statics.createFromOauth = function(email) {
 
 };
 
+// decrypt/verify and then find the user based on the id
+users.statics.authenticateToken = function(token){
+
+  if (process.env.JWT_SINGLE_USE) {
+    if (used_tokens.hasOwnProperty(token)) {
+      throw new Error();
+    } else {
+      let parsedToken = jwt.verify(token, process.env.SECRET);
+      let query = {_id: parsedToken.id};
+      used_tokens[token] = 'token';
+      return this.findOne(query);
+    }
+  } else {
+    let parsedToken = jwt.verify(token, process.env.SECRET);
+    let query = {_id: parsedToken.id};
+    return this.findOne(query);
+
+  }
+};
+
 users.statics.authenticateBasic = function(auth) {
   let query = {username:auth.username};
   return this.findOne(query)
@@ -57,7 +80,14 @@ users.methods.generateToken = function() {
     id: this._id,
     role: this.role,
   };
-  
+
+  if (process.env.JWT_EXPIRES) {
+    let signOptions = {
+      expiresIn: process.env.JWT_EXPIRES,
+    };
+
+    return jwt.sign(token, process.env.SECRET, signOptions);
+  }
   return jwt.sign(token, process.env.SECRET);
 };
 
