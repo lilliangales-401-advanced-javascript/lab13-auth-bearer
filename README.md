@@ -5,16 +5,14 @@
 ### Author: Student/Group Name
 
 ### Links and Resources
-* [submission PR](http://xyz.com)
-* [travis](http://xyz.com)
-* [back-end](http://xyz.com) (when applicable)
-* [front-end](http://xyz.com) (when applicable)
+* [submission PR](https://github.com/lilliangales-401-advanced-javascript/lab13-auth-bearer/pulls)
+* [travis] (https://travis-ci.com/lilliangales-401-advanced-javascript/lab13-auth-bearer/builds/125014009)
+
 
 #### Documentation
 * [api docs](http://xyz.com) (API servers)
 * [jsdoc](http://xyz.com) (Server assignments)
-* [styleguide](http://xyz.com) (React assignments)
-* [travis] (https://travis-ci.com/lilliangales-401-advanced-javascript/lab13-auth-bearer/builds/125013361?utm_medium=notification&utm_source=email)
+
 
 
 ### Modules

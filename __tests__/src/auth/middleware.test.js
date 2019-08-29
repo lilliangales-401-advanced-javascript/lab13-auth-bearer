@@ -72,11 +72,11 @@ describe('Auth Middleware', () => {
 
     });
 
-    it('logs in an admin user with the right credentials', () => {
+    it('logs in an admin user with the incorrect credentials', () => {
 
       let req = {
         headers: {
-          authorization: 'Basic YWRtaW46cGFzc3dvcmQ=',
+          authorization: 'Basic YWRtaW46cGFzc3=',
         },
       };
       let res = {};
@@ -86,7 +86,7 @@ describe('Auth Middleware', () => {
       return middleware(req,res,next)
         .then( () => {
           cachedToken = req.token;
-          expect(next).toHaveBeenCalledWith();
+          expect(next).toHaveBeenCalledWith(errorObject);
         });
 
     });

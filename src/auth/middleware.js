@@ -40,12 +40,13 @@ module.exports = (req, res, next) => {
   }
 
   /**
-   *
+   * Auth bearer function
    * @param authString
    * @returns {Promise<T>}
    * @private
    */
   function _authBearer(authString){
+    // static method on the user constructor, not a specific user
     return User.authenticateToken(authString)
       .then(user => _authenticate(user))
       .catch(next);
